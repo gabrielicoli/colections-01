@@ -35,6 +35,15 @@ public class Main {
 			for (String item : lista) {
 				System.out.println("O item da lista eh: "+ item);
 			}
+			lista.add("Item adicionar automaticamente 01");
+			lista.add("Item adicionar automaticamente 02");
+			
+			lista.remove(1);
+			lista.remove(1);//o segundo passou a sero primeiro
+			
+			for (String item : lista) {
+				System.out.println("Novos valores:  "+ item);
+			}
 	}
 	
 	private String obterDados() {
